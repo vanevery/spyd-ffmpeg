@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/132/trunk/src/net/majorkernelpanic/streaming/audio
+END
+AACStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/132/trunk/src/net/majorkernelpanic/streaming/audio/AACStream.java
+END
+GenericAudioStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/132/trunk/src/net/majorkernelpanic/streaming/audio/GenericAudioStream.java
+END
+AMRNBStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/132/trunk/src/net/majorkernelpanic/streaming/audio/AMRNBStream.java
+END

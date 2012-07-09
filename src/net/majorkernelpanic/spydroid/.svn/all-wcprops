@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/139/trunk/src/net/majorkernelpanic/spydroid
+END
+RtspServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/139/trunk/src/net/majorkernelpanic/spydroid/RtspServer.java
+END
+Session.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/139/trunk/src/net/majorkernelpanic/spydroid/Session.java
+END
+HttpServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/139/trunk/src/net/majorkernelpanic/spydroid/HttpServer.java
+END
+OptionsActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/132/trunk/src/net/majorkernelpanic/spydroid/OptionsActivity.java
+END
+SpydroidActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/139/trunk/src/net/majorkernelpanic/spydroid/SpydroidActivity.java
+END
+UriParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/132/trunk/src/net/majorkernelpanic/spydroid/UriParser.java
+END
