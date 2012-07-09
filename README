@@ -1,0 +1,43 @@
+This is a SVN version of Spydroid (http://code.google.com/p/spydroid-ipcamera/) from July 3, 2012 with FFMPEG for Android (https://github.com/guardianproject/android-ffmpeg).   The following code has been added to SpydroidActivity.java:
+
+    	// Runnable for FFMPEG    
+    	Runnable runProcessVideo = new Runnable () {
+    		public void run ()
+    		{
+    			try
+    			{
+					if (ffmpeg == null)
+					{
+						ffmpeg = new FFMPEGWrapper(SpydroidActivity.this.getBaseContext());
+					}
+
+    				String url = "rtsp://" + "127.0.0.1" + ":8086/?h264=500-30-720-480";
+    				ffmpeg.processVideo(url);
+    					
+    			}
+    			catch (Exception e)
+    			{
+    				Log.e(TAG,"error with ffmpeg",e);
+    			}
+    		}
+    	};   
+    		
+		// Create Thread for FFMPEG
+    	Thread thread = new Thread(runProcessVideo);
+    	//thread.setPriority(Thread.MAX_PRIORITY);
+    	thread.start();    	
+
+A couple of classes (BinaryInstaller.java, FFMPEGWapper.java, ShellUtils.java) have been taken from SSCVideoProto (https://github.com/guardianproject/SSCVideoProto/) to aid with utilizing FFMPEG.
+
+Within FFMPEGWrapper.java, a bunch of unnessecary code has been stripped out and the main ffmpegCommand has been changed to this:
+
+String[] ffmpegCommand = {ffmpegBin, "-v", "10",    			
+    			"-i", url,
+    			"-f", "rtsp",
+    			"-muxdelay", "0.1",
+    			"-acodec", "copy",
+				"-vcodec", "copy", 
+				"rtsp://live:live@192.168.1.9:1935/live/fromphone.sdp"
+    	};
+
+This sends the video from Spydroid to an RTSP server on 192.168.1.9 (a Wowza Media Server).
